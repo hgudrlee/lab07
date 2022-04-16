@@ -43,6 +43,7 @@ int loadData(Product *p) {
 
     fclose(fp);
     printf("=> 불러오기 완료\n");
+    printf("=> 총 %d개의 제품을 불러옴\n");
     
     return i;
 }
