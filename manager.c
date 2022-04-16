@@ -155,7 +155,11 @@ void searchAddress(Product *p, int cnt) {
     printf("선택한 배송 유형에 해당하는 상품을 찾습니다\n");
     printf("=> 1. 새벽배송 / 2. 택배배송 : ");
     scanf("%d", &search);
-
+	
+    if (search != 1 || search != 2) {
+    	printf("해당 번호에 맞는 검색 유형이 존재하지 않습니다\n");
+	return;
+    }
     for (int i = 0; i < cnt; i++) {
         if (p[i].price == -1) continue;
         if(p[i].type == search) {
