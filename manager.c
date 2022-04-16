@@ -105,12 +105,13 @@ void searchProduct(Product *p, int cnt) {
     if (search == 1) searchInfo(p, cnt);
     else if (search == 2) searchPrice(p, cnt);
     else if (search == 3) searchAddress(p, cnt);
+    else printf("해당 번호에 맞는 검색 유형이 존재하지 않습니다\n");
 }
 
 void searchInfo(Product *p, int cnt) {
     int scnt = 0;
     char search[30];
-
+    
     printf("=> 검색할 상품의 설명 키워드 : ");
     scanf("%s", search);
 
