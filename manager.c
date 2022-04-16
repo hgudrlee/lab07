@@ -131,7 +131,8 @@ void searchInfo(Product *p, int cnt) {
 void searchPrice(Product *p, int cnt) {
     int scnt;
     int price1, price2;
-
+    
+    printf("입력한 범위에 해당하는 가격대의 상품을 찾습니다\n");
     printf("=> 검색할 상품의 가격 범위(최소, 최대) : ");
     scanf("%d %d", &price1, &price2);
 
