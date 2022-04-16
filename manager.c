@@ -2,6 +2,7 @@
 
 int selectMenu() {
     	int menu;
+	printf("\nOSS 마켓에 방문해주셔서 감사합니다!\n\n");
     	printf("\n*** OSS마켓 ***\n");
     	printf("0. 종료\n");
     	printf("1. 상품 추가\n");
