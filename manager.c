@@ -112,6 +112,7 @@ void searchInfo(Product *p, int cnt) {
     int scnt = 0;
     char search[30];
     
+    printf("키워드를 통해 상품을 검색합니다\n");
     printf("=> 검색할 상품의 설명 키워드 : ");
     scanf("%s", search);
 
