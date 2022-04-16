@@ -151,7 +151,8 @@ void searchPrice(Product *p, int cnt) {
 void searchAddress(Product *p, int cnt) {
     int scnt = 0;
     int search;
-
+    
+    printf("선택한 배송 유형에 해당하는 상품을 찾습니다\n");
     printf("=> 1. 새벽배송 / 2. 택배배송 : ");
     scanf("%d", &search);
 
