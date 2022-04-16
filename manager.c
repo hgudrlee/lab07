@@ -2,7 +2,7 @@
 
 int selectMenu() {
     	int menu;
-	printf("\nOSS 마켓에 방문해주셔서 감사합니다!\n\n");
+	printf("\nOSS 마켓에 방문해주셔서 감사합니다!\n");
     	printf("\n*** OSS마켓 ***\n");
     	printf("0. 종료\n");
     	printf("1. 상품 추가\n");
@@ -12,7 +12,7 @@ int selectMenu() {
     	printf("5. 상품 검색\n");
     	printf("6. 저장\n");
     	printf("\n=> 선택할 메뉴 : ");
-    	scanf("%d", &menu);
+	scanf("%d", &menu);
     
     	return menu;
 }
@@ -69,7 +69,7 @@ int listProduct(Product *p, int cnt) {
         printf("\n");
     }
     printf("-----------------------------\n");
-    printf("현재 총 상품의 개수 : %d\n", count);
+    printf("	현재 총 상품의 개수 : %d\n", count);
     printf("-----------------------------\n");
     return 1;
 }
