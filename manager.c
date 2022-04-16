@@ -43,14 +43,16 @@ int loadData(Product *p) {
 
     fclose(fp);
     printf("=> 불러오기 완료\n");
-    printf("=> 총 %d개의 제품을 불러옴\n");
+    printf("=> 총 %d개의 제품을 불러옴\n", i);
     
     return i;
 }
 
 int listProduct(Product *p, int cnt) {
+    int count = 0;
     for (int i = 0; i < cnt; i++) {
         if (p[i].price == -1) continue;
+	count++;
         printf("-----------------------------\n");
         printf("- %d번 상품\n", i+1);
         printf("상품명 : %s\n", p[i].name);
@@ -67,7 +69,8 @@ int listProduct(Product *p, int cnt) {
         printf("\n");
     }
     printf("-----------------------------\n");
-
+    printf("현재 총 상품의 개수 : %d\n", count);
+    printf("-----------------------------\n");
     return 1;
 }
 
